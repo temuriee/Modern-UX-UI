@@ -4,7 +4,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { codeExamples, floatingCards } from "../data/CodeExamples";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-export default function Hero() {
+const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [activeTab, setActiveTab] = useState("App.jsx");
 
@@ -178,4 +178,6 @@ export default function Hero() {
       </div>
     </section>
   );
-}
+};
+
+export default Hero;
